@@ -1,0 +1,17 @@
+[
+    {
+        "username": "rahulshettyacademy",
+        "password": "learning",
+        "products": [
+            "iphone X",
+            "Blackberry"
+        ]
+    },
+    {
+        "username": "rahulshettyacademy",
+        "password": "learning",
+        "products": [
+            "iphone X"
+        ]
+    }
+]
