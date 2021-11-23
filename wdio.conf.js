@@ -22,8 +22,8 @@ exports.config = {
     //
     suites:
     {
-        smokeSuite:['test/specs/EcommerceE2E.js','test/specs/firstTest.js'],
-        suite1:['test/specs/firstTest.js']
+        smokeSuite: ['test/specs/EcommerceE2E.js', 'test/specs/firstTest.js'],
+        suite1: ['test/specs/firstTest.js']
     },
     specs: [
         // './test/specs/**/*.js'
@@ -69,10 +69,11 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     },
-    {
-        maxInstances: 1,
-        browserName: 'firefox'
-    }],
+    // { //uncomment to run on both browsers
+    //     maxInstances: 1,
+    //     browserName: 'firefox'
+    // }
+    ],
     //
     // ===================
     // Test Configurations
