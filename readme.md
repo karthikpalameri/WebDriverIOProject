@@ -39,9 +39,11 @@ npm -i
 ## Usage
 
 ```javascript
-npx wdio run wdio.conf.js
-or 
-npx wdio run wdio.conf.js --mocha.Opts.grep "End2End" #to pick grep based group
+npx wdio run wdio.conf.js #run conf
+
+npx wdio run wdio.conf.js --mocha.Opts.grep "End2End" #run grep based group
+
+npx wdio run wdio.conf.js --suite suite1 #run suite1 configured in wdio.conf.js
 ```
 
 ## Contributing

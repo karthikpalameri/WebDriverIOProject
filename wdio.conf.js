@@ -20,6 +20,11 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
+    suites:
+    {
+        smokeSuite:['test/specs/EcommerceE2E.js','test/specs/firstTest.js'],
+        suite1:['test/specs/firstTest.js']
+    },
     specs: [
         // './test/specs/**/*.js'
         'test/specs/EcommerceE2E.js'
