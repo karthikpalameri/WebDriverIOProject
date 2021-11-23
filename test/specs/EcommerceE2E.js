@@ -3,12 +3,13 @@ const loginPage = require('../pageobjects/loginPage');
 const expectchai = require('chai').expect;
 const reviewPage = require('../pageobjects/reviewPage');
 const loginData = require('../testData/testData.json');
-describe('End2End Ecom application test', async () => {
-
+describe('End2End Ecom application test', async function()  {
+    
     loginData.forEach(async ({ username, password, products: productsToClick }) => {
         console.log("*******->" + username, password);
-        it("e2e add to cart and checkout", async () => {
+        it("e2e add to cart and checkout", async function ()  { //should be function to try reties
 
+            this.retries(2) // arrow function will not work 
             await browser.url("/loginpagePractise/")
 
             await loginPage.login(username, password) //optimized pom 

@@ -1,4 +1,4 @@
-# Foobar
+# Webdriverio
 
 webdriverio framework for dealing with all automation (web,mobile)
 
@@ -24,7 +24,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Helpful links
-"CrossBrowser Testing Help" : # Foobar
+"CrossBrowser Testing Help" : # Webdriverio
 
 webdriverio framework for dealing with all automation (web,mobile)
 
