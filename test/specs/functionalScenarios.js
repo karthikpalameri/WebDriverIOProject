@@ -1,7 +1,7 @@
 const expectchai = require('chai').expect;
-describe('Functional testing on application', () => {
+describe('Functional testing on application', async() => {
     it('Scrolling till element',async() =>{
-        browser.url("https://www.rahulshettyacademy.com/AutomationPractice/")
+        browser.url("/AutomationPractice/")
         await $("#mousehover").waitForClickable()
 
         await $("#mousehover").scrollIntoView()

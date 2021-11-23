@@ -1,8 +1,9 @@
 const expectchai = require('chai').expect;
+describe('Ecom Application tests 2', async() => {
 describe('Ecom Application tests 2', () => {
     xit('Ui controls Statis Drop down selection', async () => {
         await browser.maximizeWindow()
-        await browser.url("https://www.rahulshettyacademy.com/loginpagePractise/")
+        await browser.url("/loginpagePractise/")
 
         await $("[id='username']").setValue('rahulshettyacademy') //sendKeys    
         await $("#password").setValue('learning') //sendKeysf
@@ -28,7 +29,7 @@ describe('Ecom Application tests 2', () => {
 
     xit('Ui controls Dynamic dropDown selection', async () => {
         await browser.maximizeWindow()
-        await browser.url("https://www.rahulshettyacademy.com/AutomationPractice/")
+        await browser.url("/AutomationPractice/")
         await $('input#autocomplete').setValue('ind')
 
         await browser.pause(2000)
@@ -42,7 +43,7 @@ describe('Ecom Application tests 2', () => {
     })
     xit('Ui controls Select Check Box', async () => {
         await browser.maximizeWindow()
-        await browser.url("https://www.rahulshettyacademy.com/AutomationPractice/")
+        await browser.url("/AutomationPractice/")
         let [firstCheckBox, secondCheckBox, thirdCheckBox] = await $$('label input[type=checkbox]')
         await secondCheckBox.click()
         console.log(await secondCheckBox.isSelected());

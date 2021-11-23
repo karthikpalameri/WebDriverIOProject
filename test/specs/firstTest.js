@@ -6,7 +6,7 @@ describe('Ecommerce Application', async() => {//test suite
         async () => {
             console.log('login page title ');
             await browser.maximizeWindow()
-            await browser.url("https://www.rahulshettyacademy.com/loginpagePractise/")
+            await browser.url("/loginpagePractise/")
             console.log(await browser.getTitle());
             await expect(browser).toHaveTitleContaining('Practise')
 
@@ -32,7 +32,7 @@ describe('Ecommerce Application', async() => {//test suite
 
     xit("Login successfull check", async () => {
         await browser.maximizeWindow()
-        await browser.url("https://www.rahulshettyacademy.com/loginpagePractise/")
+        await browser.url("/loginpagePractise/")
         console.log(await browser.getTitle());
         await expect(browser).toHaveTitleContaining('Practise')
 

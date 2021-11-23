@@ -1,6 +1,6 @@
-describe('Window operarations', () => {
+describe('Window operarations', async() => {
     xit('switch window operation', async () => {
-        await browser.url("https://www.rahulshettyacademy.com/AutomationPractice/")
+        await browser.url("/AutomationPractice/")
         const openBtn = await $("#openwindow")
         await openBtn.waitForDisplayed()
         await openBtn.scrollIntoView()
@@ -19,13 +19,13 @@ describe('Window operarations', () => {
         await browser.newWindow("https://www.google.com") //create a new tab
         const newWinTitle = await browser.getTitle()      //get tite of new tab
         console.log(newWinTitle);
-        await browser.switchWindow("https://www.rahulshettyacademy.com/AutomationPractice/") //switch back to old window/tab using url 
+        await browser.switchWindow("/AutomationPractice/") //switch back to old window/tab using url 
 
         console.log("Main window title ->"+await browser.getTitle());
     })
 
     it("Frames operations",async ()=>{
-        await browser.url("https://www.rahulshettyacademy.com/AutomationPractice/")
+        await browser.url("/AutomationPractice/")
         console.log("number of links in current page ->"+await $$("a").length);
         await browser.switchToFrame(await $("#courses-iframe")) //switch to frame using frame id 
         console.log(await $("*=Home").getText())  //frame operation 

@@ -9,10 +9,10 @@ describe('End2End Ecom application test', async () => {
         console.log("*******->" + username, password);
         it("e2e add to cart and checkout", async () => {
 
-            await browser.url("https://www.rahulshettyacademy.com/loginpagePractise/")
+            await browser.url("/loginpagePractise/")
 
             await loginPage.login(username, password) //optimized pom 
-
+            // await shop.checkout.scrollIntoView()
             await shop.checkout.waitForDisplayed()
             await shop.addProductsToCart(productsToClick) //optimized 
             await shop.checkout.scrollIntoView()
